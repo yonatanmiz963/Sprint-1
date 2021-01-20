@@ -1,0 +1,25 @@
+body {
+    background-color: brown;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+table {
+    margin: auto;
+    width: auto;
+    height: auto;
+    background-color: black;
+    border-spacing: 1px;
+    margin-top: 100px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: grey;
+}
+
+.hide {
+    background-color: gray;
+}
