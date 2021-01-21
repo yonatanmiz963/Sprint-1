@@ -25,7 +25,6 @@ function buildBoard(size) {
     var board = createMat(size, size);
     for (var i = 0; i < board.length; i++) {
         for (var j = 0; j < board[0].length; j++) {
-
             var cell = {
                 minesAroundCount: 0,
                 isShown: false,
@@ -120,7 +119,6 @@ function cellClicked(elCell, i, j) {
         }, 1000);
         return;
     }
-
     var cell = gBoard[i][j];
 
     if (cell.isMarked) return;
@@ -162,7 +160,6 @@ function cellMarked(elCell, i, j) {
         elCell.innerHTML = '';
         elCell.classList.toggle('shown');
     }
-
     checkGameOver(i, j);
 }
 
@@ -211,7 +208,6 @@ function createMines(num, i, j) {
 // Checks for a win or a loss.
 function checkGameOver(i, j) {
     var elSmiley = document.querySelector('.smiley');
-
     if (!gGame.lives) {
         revealAllMines();
         elSmiley.innerHTML = '🤯';
@@ -254,7 +250,6 @@ function checkIfVictory(i, j) {
                 if (!cell.isMarked) {
                     return false;
                 }
-
             } else {
                 if (!cell.isShown) {
                     return false;
