@@ -1,7 +1,7 @@
 body {
-    background-color: rgb(105, 26, 26);
     color: white;
     font-family: "Roboto", sans-serif;
+    background-image: url(../imgs/camo.jpg);
 }
 
 table {
@@ -10,6 +10,8 @@ table {
     height: auto;
     background-color: black;
     border-spacing: 1px;
+    -webkit-box-shadow: 2px 5px 15px 11px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 5px 15px 11px rgba(0, 0, 0, 0.3);
 }
 
 .cell {
@@ -17,61 +19,110 @@ table {
     height: 40px;
     text-align: center;
     background-color: grey;
+    -moz-box-shadow: inset 0 0 10px #4d4646;
+    -webkit-box-shadow: inset 0 0 10px #474242;
+    box-shadow: inset 0 0 10px #383333;
 }
 
 .cell:hover {
-    background-color: rgb(107, 106, 106);
+    background-color: rgb(197, 197, 197);
     cursor: pointer;
-}
-
-.hide {
-    background-color: gray;
 }
 
 .remote {
     margin: auto;
     text-align: center;
-    width: 400px;
-    height: 300px;
-}
-
-.remote .timer {
-    width: 200px;
-    margin: auto;
-    margin-left: 106px;
-    color: rgb(0, 0, 0);
+    width: 800px;
+    height: 150px;
 }
 
 .remote button {
-    margin: 20px;
-    padding: 15px;
-    border-radius: 15px;
+    margin: 40px;
+    margin-right: 75px;
+    padding: 20px;
+    border-radius: 50px;
     outline: none;
-    background-color: grey;
-    margin-top: 50px;
+    background-color: rgb(107, 107, 107);
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+    -webkit-box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.82);
+    text-shadow: 4px 3px 20px #000000;
+    color: white;
 }
 
 .remote button:hover {
     cursor: pointer;
-    background-color: rgb(107, 106, 106);
+    background-color: rgb(180, 180, 180);
+    padding: 30px;
 }
 
 .shown {
     background-color: rgb(107, 106, 106);
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
 }
 
 .title {
     margin: auto;
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     color: black;
     font-weight: bolder 2px;
     margin-top: 20px;
+    -webkit-text-stroke: 0.5px white;
+    text-shadow: 4px 3px 20px #000000;
 }
 
 .smiley {
+    margin: auto;
     font-size: 60px;
     cursor: pointer;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 4px 3px 20px #000000;
+}
+
+.second .lives {
+    width: 150px;
+    display: inline;
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.3px white;
     margin: 10px;
-    margin-left: 28px;
+    float: right;
+    margin-right: 40px;
+    text-shadow: 4px 3px 20px #000000;
+}
+
+.second .timer {
+    width: 50px;
+    margin: auto;
+    display: inline;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.3px white;
+    font-size: 28px;
+    margin: 10px;
+    float: left;
+    margin-left: 120px;
+    margin-top: 20px;
+    text-shadow: 4px 3px 20px #000000;
+}
+
+.second {
+    margin: auto;
+    width: 1000px;
+    height: 100px;
+}
+
+.hints img {
+    cursor: pointer;
+    width: 50px;
+    text-shadow: 4px 3px 20px #000000;
+}
+
+.hints {
+    margin-left: 70px;
 }

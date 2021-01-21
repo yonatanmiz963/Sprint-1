@@ -1,3 +1,6 @@
+'use strict';
+
+
 function createMat(ROWS, COLS) {
     var mat = []
     for (var i = 0; i < ROWS; i++) {
@@ -13,30 +16,23 @@ function createMat(ROWS, COLS) {
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive.
 }
 
 
-// Returns the class name for a specific cell
+// Returns the class name for a specific cell.
 function getClassName(location) {
     var cellClass = 'cell-' + location.i + '-' + location.j;
     return cellClass;
 }
 
 
-// Convert a location object {i, j} to a selector and render a value in that element
-function renderCell(location, value) {
-    var cellSelector = '.' + getClassName(location)
-    var elCell = document.querySelector(cellSelector);
-    elCell.innerHTML = value;
-}
-
-// Disabling right mouse click menu
+// Disabling right mouse click menu.
 document.oncontextmenu = (event) => {
     event.preventDefault();
 }
 
-// timer functions
+// Timer functions.
 function setTime() {
     var minutesLabel = document.querySelector(".minutes");
     var secondsLabel = document.querySelector(".seconds");
