@@ -9,6 +9,7 @@ var gGame;
 var gTimer;
 var gBoard;
 var gExplosionAudio = new Audio('../sounds/explosion.mp3');
+var gWinSound = new Audio('../sounds/win.mp3');
 
 
 function initGame() {
@@ -135,12 +136,10 @@ function cellClicked(elCell, i, j) {
         setMinesNegsCount(gBoard);
         startTimer();
     }
-
-    // var value = '';
-
     if (!cell.minesAroundCount && !cell.isMine) {
         expandShown({ i: i, j: j });
     }
+
     renderCell({ i: i, j: j });
     checkGameOver(i, j);
 }
@@ -212,22 +211,20 @@ function createMines(num, i, j) {
 // Checks for a win or a loss.
 function checkGameOver(i, j) {
     var elSmiley = document.querySelector('.smiley');
-    // console.log('lives left: ', gGame.lives)
 
     if (!gGame.lives) {
         revealAllMines();
         elSmiley.innerHTML = '🤯';
         gGame.isFinished = true;
         clearTimer();
-        // console.log('YOU LOSE!');
     } else {
         var isWin = checkIfVictory(i, j);
     }
     if (isWin) {
         elSmiley.innerHTML = '😎';
+        gWinSound.play();
         gGame.isFinished = true;
         clearTimer();
-        // console.log('YOU WIN!')
     }
 }
 

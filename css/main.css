@@ -40,7 +40,7 @@ table {
     margin: 40px;
     margin-right: 75px;
     padding: 20px;
-    border-radius: 50px;
+    border-radius: 55px;
     outline: none;
     background-color: rgb(107, 107, 107);
     font-size: 14px;
@@ -55,7 +55,7 @@ table {
 .remote button:hover {
     cursor: pointer;
     background-color: rgb(180, 180, 180);
-    padding: 30px;
+    padding: 27px;
 }
 
 .shown {
