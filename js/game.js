@@ -154,7 +154,7 @@ function cellMarked(elCell, i, j) {
         cell.isMarked = true;
         gBoard.markedCount++;
         elCell.innerHTML = '🏁 ';
-        elCell.classList.toggle('shown');
+        // elCell.classList.toggle('shown');
     } else {
         cell.isMarked = false;
         elCell.innerHTML = '';

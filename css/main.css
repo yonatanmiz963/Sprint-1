@@ -1,6 +1,7 @@
 body {
     color: white;
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "armalite";
     background-image: url(../imgs/camo.jpg);
 }
 
@@ -43,12 +44,13 @@ table {
     outline: none;
     background-color: rgb(107, 107, 107);
     font-size: 14px;
-    font-weight: bold;
+    /* font-weight: bold; */
     transition: 0.3s;
     -webkit-box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.82);
     box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.82);
     text-shadow: 4px 3px 20px #000000;
     color: white;
+    font-family: "armalite";
 }
 
 .remote button:hover {
@@ -58,7 +60,7 @@ table {
 }
 
 .shown {
-    background-color: rgb(107, 106, 106);
+    background-color: rgb(161, 161, 161);
     -moz-box-shadow: inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
     box-shadow: inset 0 0 10px #000000;
@@ -68,10 +70,10 @@ table {
     margin: auto;
     text-align: center;
     font-size: 40px;
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: bolder 2px;
     margin-top: 20px;
-    -webkit-text-stroke: 0.5px white;
+    -webkit-text-stroke: 0.1px rgb(177, 174, 174);
     text-shadow: 4px 3px 20px #000000;
 }
 
@@ -90,7 +92,7 @@ table {
     display: inline;
     font-size: 24px;
     color: rgb(0, 0, 0);
-    -webkit-text-stroke: 0.3px white;
+    -webkit-text-stroke: 0.1px rgb(177, 174, 174);
     float: left;
     text-shadow: 4px 3px 20px #000000;
     margin: 20px;
@@ -100,8 +102,8 @@ table {
     width: 50px;
     display: inline;
     color: rgb(0, 0, 0);
-    -webkit-text-stroke: 0.3px white;
     font-size: 26px;
+    -webkit-text-stroke: 0.1px rgb(177, 174, 174);
     float: left;
     text-shadow: 4px 3px 20px #000000;
     margin: 20px;
@@ -128,8 +130,8 @@ table {
 .best-time {
     font-size: 24px;
     color: rgb(0, 0, 0);
-    -webkit-text-stroke: 0.3px white;
     float: left;
+    -webkit-text-stroke: 0.1px rgb(177, 174, 174);
     text-shadow: 4px 3px 20px #000000;
     display: inline;
     margin: 20px;
@@ -145,7 +147,6 @@ table {
     outline: none;
     background-color: rgb(107, 107, 107);
     font-size: 14px;
-    font-weight: bold;
     transition: 0.3s;
     -webkit-box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.82);
     box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.82);
@@ -154,10 +155,16 @@ table {
     background-color: rgb(107, 107, 107);
     border-radius: 30px;
     display: inline;
+    font-family: "armalite";
 }
 
 .safe-click:hover {
     cursor: pointer;
     background-color: rgb(180, 180, 180);
     padding: 14px;
+}
+
+@font-face {
+    font-family: "armalite";
+    src: url("../fonts/armalite.ttf") format("truetype");
 }
