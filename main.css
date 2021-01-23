@@ -1,0 +1,163 @@
+body {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    background-image: url(../imgs/camo.jpg);
+}
+
+table {
+    margin: auto;
+    width: auto;
+    height: auto;
+    background-color: black;
+    border-spacing: 1px;
+    -webkit-box-shadow: 2px 5px 15px 11px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 5px 15px 11px rgba(0, 0, 0, 0.3);
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: grey;
+    -moz-box-shadow: inset 0 0 10px #4d4646;
+    -webkit-box-shadow: inset 0 0 10px #474242;
+    box-shadow: inset 0 0 10px #383333;
+}
+
+.cell:hover {
+    background-color: rgb(197, 197, 197);
+    cursor: pointer;
+}
+
+.remote {
+    margin: auto;
+    text-align: center;
+    width: 800px;
+    height: 150px;
+}
+
+.remote button {
+    margin: 40px;
+    padding: 16px;
+    border-radius: 55px;
+    outline: none;
+    background-color: rgb(107, 107, 107);
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+    -webkit-box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.82);
+    text-shadow: 4px 3px 20px #000000;
+    color: white;
+}
+
+.remote button:hover {
+    cursor: pointer;
+    background-color: rgb(180, 180, 180);
+    padding: 22px;
+}
+
+.shown {
+    background-color: rgb(107, 106, 106);
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.title {
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-weight: bolder 2px;
+    margin-top: 20px;
+    -webkit-text-stroke: 0.5px white;
+    text-shadow: 4px 3px 20px #000000;
+}
+
+.smiley {
+    margin: auto;
+    font-size: 60px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    text-align: center;
+    text-shadow: 4px 3px 20px #000000;
+}
+
+.second .lives {
+    width: 100px;
+    display: inline;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.3px white;
+    float: left;
+    text-shadow: 4px 3px 20px #000000;
+    margin: 20px;
+}
+
+.second .timer {
+    width: 50px;
+    display: inline;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.3px white;
+    font-size: 26px;
+    float: left;
+    text-shadow: 4px 3px 20px #000000;
+    margin: 20px;
+}
+
+.second {
+    margin: auto;
+    width: 1000px;
+    height: 100px;
+}
+
+.hints img {
+    cursor: pointer;
+    width: 50px;
+}
+
+.hints {
+    width: 160px;
+    display: inline;
+    float: left;
+    margin: 20px;
+}
+
+.best-time {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.3px white;
+    float: left;
+    text-shadow: 4px 3px 20px #000000;
+    display: inline;
+    margin: 20px;
+}
+
+.safe-click {
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    float: left;
+    text-shadow: 4px 3px 20px #000000;
+    padding: 10px;
+    outline: none;
+    background-color: rgb(107, 107, 107);
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+    -webkit-box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.82);
+    text-shadow: 4px 3px 20px #000000;
+    color: white;
+    background-color: rgb(107, 107, 107);
+    border-radius: 30px;
+    display: inline;
+}
+
+.safe-click:hover {
+    cursor: pointer;
+    background-color: rgb(180, 180, 180);
+    padding: 14px;
+}
