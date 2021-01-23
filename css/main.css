@@ -88,7 +88,7 @@ table {
 .second .lives {
     width: 100px;
     display: inline;
-    font-size: 26px;
+    font-size: 24px;
     color: rgb(0, 0, 0);
     -webkit-text-stroke: 0.3px white;
     float: left;
@@ -101,7 +101,7 @@ table {
     display: inline;
     color: rgb(0, 0, 0);
     -webkit-text-stroke: 0.3px white;
-    font-size: 28px;
+    font-size: 26px;
     float: left;
     text-shadow: 4px 3px 20px #000000;
     margin: 20px;
@@ -126,7 +126,7 @@ table {
 }
 
 .best-time {
-    font-size: 26px;
+    font-size: 24px;
     color: rgb(0, 0, 0);
     -webkit-text-stroke: 0.3px white;
     float: left;
