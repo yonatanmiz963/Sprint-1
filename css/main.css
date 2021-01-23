@@ -38,8 +38,7 @@ table {
 
 .remote button {
     margin: 40px;
-    margin-right: 75px;
-    padding: 20px;
+    padding: 16px;
     border-radius: 55px;
     outline: none;
     background-color: rgb(107, 107, 107);
@@ -55,7 +54,7 @@ table {
 .remote button:hover {
     cursor: pointer;
     background-color: rgb(180, 180, 180);
-    padding: 27px;
+    padding: 22px;
 }
 
 .shown {
@@ -81,34 +80,31 @@ table {
     font-size: 60px;
     cursor: pointer;
     margin-bottom: 30px;
+    margin-top: 15px;
     text-align: center;
     text-shadow: 4px 3px 20px #000000;
 }
 
 .second .lives {
-    width: 150px;
+    width: 100px;
     display: inline;
     font-size: 26px;
     color: rgb(0, 0, 0);
     -webkit-text-stroke: 0.3px white;
-    margin: 10px;
-    float: right;
-    margin-right: 40px;
+    float: left;
     text-shadow: 4px 3px 20px #000000;
+    margin: 20px;
 }
 
 .second .timer {
     width: 50px;
-    margin: auto;
     display: inline;
     color: rgb(0, 0, 0);
     -webkit-text-stroke: 0.3px white;
     font-size: 28px;
-    margin: 10px;
     float: left;
-    margin-left: 120px;
-    margin-top: 20px;
     text-shadow: 4px 3px 20px #000000;
+    margin: 20px;
 }
 
 .second {
@@ -120,9 +116,48 @@ table {
 .hints img {
     cursor: pointer;
     width: 50px;
-    text-shadow: 4px 3px 20px #000000;
 }
 
 .hints {
-    margin-left: 70px;
+    width: 160px;
+    display: inline;
+    float: left;
+    margin: 20px;
+}
+
+.best-time {
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.3px white;
+    float: left;
+    text-shadow: 4px 3px 20px #000000;
+    display: inline;
+    margin: 20px;
+}
+
+.safe-click {
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    float: left;
+    text-shadow: 4px 3px 20px #000000;
+    padding: 10px;
+    outline: none;
+    background-color: rgb(107, 107, 107);
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+    -webkit-box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.82);
+    text-shadow: 4px 3px 20px #000000;
+    color: white;
+    background-color: rgb(107, 107, 107);
+    border-radius: 30px;
+    display: inline;
+}
+
+.safe-click:hover {
+    cursor: pointer;
+    background-color: rgb(180, 180, 180);
+    padding: 14px;
 }

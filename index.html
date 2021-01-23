@@ -9,13 +9,15 @@
 </head>
 
 <body onload="initGame()">
+    <audio id="explosion" src="sounds/explosion.mp3"></audio>
+    <audio id="win" src="sounds/win.mp3"></audio>
 
     <h2 class="title">Mine Sweeper</h2>
 
     <div class="remote">
-        <button onclick="changeLevel(4, 2, 2)">Beginner</button>
-        <button onclick="changeLevel(8, 12, 3)">Medium</button>
-        <button onclick="changeLevel(12, 30, 3)">Expert</button>
+        <button onclick="changeLevel('beginner', 4, 2, 2)">Beginner</button>
+        <button onclick="changeLevel('medium', 8, 12, 3)">Medium</button>
+        <button onclick="changeLevel('expert', 12, 30, 3)">Expert</button>
     </div>
 
     <div class="second">
@@ -24,7 +26,8 @@
             <img src="imgs/hint-light.jpg">
             <img src="imgs/hint-light.jpg">
         </div>
-
+        <button class="safe-click" onclick="safeClick()">3 Safe Click</button>
+        <h3 class="best-time">Best Time:</h3>
         <h3 class="lives"></h3>
         <h3 class="timer"><label class="minutes">00</label>:<label class="seconds">00</label></h3>
     </div>
